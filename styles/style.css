@@ -36,14 +36,13 @@ html {
   align-items: flex-end;
 }
 
-.result {
-}
 .result__video-container {
   width: 711px;
   margin-bottom: 16px;
   position: relative;
 }
 .result__video {
+  height: 386px;
   width: 100%;
   object-fit: cover;
   object-position: center;
@@ -58,7 +57,7 @@ html {
 }
 .search-form__checkbox-list {
   display: flex;
-  gap: 39px;
+  gap: 15px;
 }
 .search-form {
   display: flex;
@@ -94,6 +93,7 @@ html {
   font-weight: 400;
   font-family: "Fira Sans Condensed", sans-serif;
   font-style: normal;
+  margin-bottom: 5px;
 }
 
 .content__card-link {
