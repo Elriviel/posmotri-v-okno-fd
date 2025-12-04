@@ -8,6 +8,20 @@ html {
   block-size: 100%;
 }
 
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+blockquote,
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
 .page {
   display: flex;
   inline-size: 1200px;
@@ -75,11 +89,11 @@ html {
   font-weight: 400;
   font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
-  color: #ffffffb2;
+  color: #ffffff;
   background-color: #1b1919;
   border: none;
-  border-top: 1px solid #ffffff;
-  border-bottom: 1px solid #ffffff;
+  border-top: 1px solid currentColor;
+  border-bottom: 1px solid currentColor;
 }
 .search-form__textfield:focus {
   outline: none;
@@ -96,9 +110,6 @@ html {
   margin-bottom: 5px;
 }
 
-.content__card-link {
-  cursor: pointer;
-}
 .content__card-link_current {
   cursor: pointer;
 }
@@ -173,7 +184,7 @@ html {
   line-height: 16.2px;
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 4;
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -197,6 +208,7 @@ html {
 .content__card-link {
   text-decoration: none;
   color: #ffffff;
+  cursor: pointer;
 }
 
 .button {
@@ -249,26 +261,12 @@ html {
 .content__card-link_current {
   background-color: #545050;
 }
-h1,
-h2,
-h3,
-h4,
-p,
-ul,
-ol,
-li,
-blockquote,
-fieldset {
-  margin: 0;
-  padding: 0;
-}
 
 ul,
 ol {
   list-style: none;
 }
 
-/* Кастомный скроллбар */
 .custom-scrollbar::-webkit-scrollbar {
   width: 4px;
 }
